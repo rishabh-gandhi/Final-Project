@@ -144,6 +144,12 @@ public class RaceMonitor : MonoBehaviourPunCallbacks {
     }
 
     [PunRPC]
+
+    public void MainMenu()
+    {
+
+        PhotonNetwork.LoadLevel("Menu");
+    }
     public void RestartGame() {
 
         PhotonNetwork.LoadLevel("Track01");
